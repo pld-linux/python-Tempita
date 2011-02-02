@@ -3,7 +3,7 @@ Summary:	A very small text templating language
 Summary(pl.UTF-8):	-
 Name:		python-%{module}
 Version:	0.4
-Release:	0.1
+Release:	0.2
 License:	MIT
 Group:		Development/Languages/Python
 Source0:	http://pypi.python.org/packages/source/T/Tempita/%{module}-%{version}.tar.gz
@@ -47,6 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc docs
+%dir %{py_sitescriptdir}/tempita
 %{py_sitescriptdir}/tempita/*.py[co]
 %if "%{py_ver}" > "2.4"
 %{py_sitescriptdir}/%{module}-*.egg-info
