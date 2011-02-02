@@ -10,11 +10,12 @@ Source0:	http://pypi.python.org/packages/source/T/Tempita/%{module}-%{version}.t
 # Source0-md5:	0abe015a72e748d0c6284679a497426c
 URL:		http://pythonpaste.org/tempita/
 BuildRequires:	python-devel
+BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 # if py_postclean is used
 BuildRequires:	rpmbuild(macros) >= 1.219
 #Requires:		python-libs
-Requires:		python-modules
+Requires:	python-modules
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
