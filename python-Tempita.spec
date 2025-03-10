@@ -8,7 +8,7 @@ Summary:	A very small text templating language
 Summary(pl.UTF-8):	Bardzo mały język szablonów tekstu
 Name:		python-%{module}
 Version:	0.5.2
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages/Python
 Source0:	https://files.pythonhosted.org/packages/source/T/Tempita/%{module}-%{version}.tar.gz
