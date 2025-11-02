@@ -1,14 +1,15 @@
 #
 # Conditional build:
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module (built from python3-tempita.spec)
 
 %define 	module	Tempita
 Summary:	A very small text templating language
 Summary(pl.UTF-8):	Bardzo mały język szablonów tekstu
 Name:		python-%{module}
+# keep 0.5.2 here for python2 support
 Version:	0.5.2
-Release:	4
+Release:	5
 License:	MIT
 Group:		Development/Languages/Python
 Source0:	https://files.pythonhosted.org/packages/source/T/Tempita/%{module}-%{version}.tar.gz
